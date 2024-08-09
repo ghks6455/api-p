@@ -1,0 +1,47 @@
+/* 초기화 */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  white-space: normal;
+}
+
+body {
+  background-color: rgb(236, 234, 232);
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+header {
+  right: 200px;
+  top: 40px;
+
+  position: absolute;
+}
+
+#allPost {
+  display: flex;
+  flex-wrap: wrap; /* 여러 줄로 포스트를 나열하기 위해 wrap을 설정 */
+  justify-content: space-between; /* 포스트 간의 간격을 균등하게 만듦 */
+  width: 80%;
+  margin-left: 10%;
+  padding-top: 5%;
+}
+
+#post {
+  width: 23%; /* 한 줄에 4개가 들어가도록 너비를 설정 */
+  height: 200px;
+  /* justify-content: space-between 의 너비?를 조정 후 위 아래 간격 띄우기 */
+  margin: 30px 0 30px 15px;
+
+  text-align: center;
+  border: 1px solid black;
+  box-sizing: border-box; /* 패딩과 보더를 포함한 크기를 설정 */
+}
+
+.hidden {
+  display: none;
+}
